@@ -2,16 +2,19 @@ import os
 import time
 
 def start():
+    while True:
+        print("Welkom! Dit is de 1e versie van de eindopdracht dingen kunnen dus snog veranderen.\nBeantwoord de vragen met A of B om verder te gaan anders gebeurt er niks :)\n")
+        print("Voordat we verder gaan, hoe wil je aangesproken worden in het verhaal?\n\nIk wil graag aangesproken worden als...\n\nA. Een meisje \nB. Een jongen")
+        gender = input(">>>")
+        if gender.lower() == "a":
+            print("je bent a ")
+            break
+        elif gender.lower() == "b":
+            print("je bent b")
+            break
+        else:
+            required()
 
-    print("Welkom! Dit is de 1e versie van de eindopdracht dingen kunnen dus snog veranderen.\nBeantwoord de vragen met A of B om verder te gaan anders gebeurt er niks :)\n")
-    print("Voordat we verder gaan, hoe wil je aangesproken worden in het verhaal?\n\nIk wil graag aangesproken worden als...\n\nA. Een meisje \nB. Een jongen")
-    gender = input(">>>")
-    if gender.lower == "a":
-        print("")
-    elif gender.lower == "b":
-        print("")
-    else:
-        required()
     print("Oke! Het spel start nu, succes!")
     time.sleep(3)
     os.system("cls")
@@ -62,7 +65,7 @@ def stukje3():
         print("Je wordt wakker door wat je denkt een aardbeving te zijn. ‘Alweer?’ denk je. Je hoofd is net zo wazig als je zicht. Je wordt wakker in wat een luxe hotel kamer lijkt te zijn. Je kijkt om je heen, geen ramen, geen deuren en wat je het meest dwars zit, geen zus.") 
         print("Plotseling gaat draait een deel van de muur om. ‘Ah dat was dus de deur’. Je bent wel wat voorzichtig maar je wilt zo snel mogelijk onderzoeken wat er allemaal gaande is.")
         print("Je loopt je kamer uit. Je kan 2 kanten op links of rechts. Er komen stemmen vanaf links.")
-        print("Je loopt naar…\n\n ")
+        print("Je loopt naar…\n\nA. Rechts\nB. Links ")
         
 
         keuze = input(">>>")
@@ -138,6 +141,167 @@ def stukje7():
             break
         else:
             required()
+
+def stukje8():
+    print("Je duwt je geluk wel tot het uiterste he? Voordat jullie de soldaat kunnen aanvallen wordt je lichthoofdig en kort daarna val je flauw.")
+    time.sleep(10)
+    stukje3()
+
+def stukje9():
+    while True:
+        print("Je komt aan in een soort lounge met allemaal verschillende mensen. Dit keer zijn er wel ramen. Het zat er al aan te komen maar als je uit het raam kijkt zie je alleen maar zwart en af en toe een glinstering. ‘we zijn al op het schip dus’ denk je. Een van de mensen loopt naar je toe en begroet je. Het is een lange brede man.")
+        print("‘Hallo (knul/grietje), welkom aan boord!’ zegt de man lachend. Je vindt het allemaal maar raar maar je hebt geen andere keuze dan er in mee te gaan. Het voelt alsof je alle tijd hebt dus je besluit een vraag te stellen.") 
+        print("Je vraagt…\n\n A. Wie bent u?\nB. jezelf af waarom je nog zinloos aan het praten bent")
+
+
+        keuze = input(">>>")
+        if keuze.lower() == "a":
+            stukje10()
+            break
+        elif keuze.lower() == "b":
+            stukje19()
+            break
+        else:
+            required()
+
+def stukje10():
+    while True:
+        print("Wie ben ik? de man lacht weer. ‘Daar zou ik ook graag achter willen komen! Knul/Grietje, wie ben jij? ‘Oeps, misschien had ik mij eerst moeten voorstellen’ denk je. ‘Uhh Wacht even wie ben ik?’ Het leek zo’n simpele vraag maar je kan het antwoord niet vinden. ‘Ah jij hebt er dus ook last van hè? Iedereen hier heeft geen herinneringen meer voordat we aan boord kwamen. ‘Oh we zijn aan boord van een ruimteschip maar dat zag je denk ik al!’ Je hebt niet echt nuttige informatie opgedaan, dus je besluit wat anders te gaan doen.")
+        print("Je gaat…\n\nA.Stoppen met praten. Je vindt dat je wel genoeg heb gepraat vandaag\nB.Richting je kamer zodat je dit keer naar links kan gaan")
+
+        keuze = input(">>>")
+        if keuze.lower() == "a":
+            stukje19()
+            break
+        elif keuze.lower() == "b":
+            stukje11()
+            break
+        else:
+            required()
+
+def stukje11():
+    while True:
+        print("Je komt aan in een smal keukentje met vieze tegels en hangend plafondlampje, maar erg veel licht geeft ie niet. Dit lijkt je 3x niks. Je probeert gauw weer weg te lopen maar een hand pakt je bij je schouder. Je draait je om en ziet een jonge vrouw met middellang blond haar en bijna lichtgevende blauwe ogen.")
+        print("Ze zit onder het bloed. Fight or Flight instinct komt naar boven.")
+        print("En jouw instinct zegt…\n\nA. Fight \nB.Flight")
+
+        keuze = input(">>>")
+        if keuze.lower() == "a":
+            stukje12()
+            break
+        elif keuze.lower() == "b":
+            stukje13()
+            break
+        else:
+            required()
+
+def stukje12():
+    while True:
+        print("Vechten dus! Je probeert je los te wringen en slaat wild om je heen. De vrouw ontwijkt met gemak alles. Ze zwaait met een snelle beweging door de lucht.  Je kijkt naar beneden. ‘Huh waarom ben ik nu degene die onder het bloed zit?’ Je strompelt wat en valt snel tegen de grond. Het laatste wat je ziet is de jonge vrouw met een onheilspellende glimlach. Je keel is doorgesneden door de vrouw, je bent dood!")
+        time.sleep(10)
+        end()
+
+def stukje13():
+    while True:
+        print("Geweld is nooit de oplossing! Ofzo… |Je schud je los en zet het op het rennen. Je ziet voordat je het keukentje verlaat dat de vrouw ook een mes in haar hand had. Ben jij even blij dat je weg bent gerend! Het is helaas nog niet voorbij je voelt dat ze nog in de buurt is. ‘huh ik hoor nu bij m’n kamer te zijn.’ denk je. Je bent niks anders tegen gekomen onderweg. Waarom zie je nu dan een lange gang met wel 30 deuren. Tijd om keuzes te maken!")
+        print("Je kiest ervoor om…\n\n A. Blijven rennen B. Een van de deuren te kiezen")
+        keuze = input(">>>")
+        if keuze.lower() == "a":
+            stukje17()
+            break
+        elif keuze.lower() == "b":
+            stukje14()
+            break
+        else:
+            required()
+
+def stukje14():
+    while True:
+        print("Je kiest een willekeurige deur. Je beland terug in het vieze keukentje. ’Wat!? Waarom ben ik hier weer!?’ De vrouw is er ook weer en pakt een van je armen stevig vast. Je moet iets doen, en snel. \nHet wordt…\n\n A.Toch maar vechten dan!\nB. Proberen met de vrouw te praten.")
+        
+        keuze = input(">>>")
+        if keuze.lower() == "a":
+            stukje12()
+            break
+        elif keuze.lower() == "b":
+            stukje15()
+            break
+        else:
+            required()
+
+def stukje15():
+    print("Je voelt dat het geen zin meer heeft om te rennen of te vechten. Ze is te snel + je blijft steeds terug komen in het keukentje. Nu je geen andere opties meer hebt besluit je maar proberen te praten. ‘Waarom doe je dit!’ schreeuw je. Kan het nog clichér? Voordat je antwoord op je vraag kan krijgen, wordt je vanaf de andere kant ook gegrepen en met gemak opgetild. Het is de lange brede man van daarnet! ‘Kom op knul/grietje, tijd om te rennen!’ ")
+    input("Druk op enter om door te gaan.")
+    stukje16()
+
+def stukje16():
+    while True:
+        print("De man brengt je terug naar de lounge. ‘Hoe wist u waar ik was? Hoe wist u de weg terug? en… bedankt.’ Geen dank knul/grietje. Ik kwam je gelijk achter na om je te waarschuwen voor de keuken. En de weg terug…? Gewoon rennen! De man lacht weer. ‘De lounge is een veilige plek, vertelt de man. Een plek waar ‘zij’ niet kan komen. Niet dat het uitmaakt want we zijn al op onze bestemming!’ de man heeft gelijk. Je kijkt uit het raam en ziet bomen, planten en bebouwing, alles wat je thuis ook zag. Door de adrenaline heb je waarschijnlijk niks van de landing gemerkt. Iedereen wilt zo snel mogelijk uitstappen, jij bent daar ook een van. een luik schuift open met een soort roltrap naar de grond. Het is best relaxend op de roltrap. Mooie gebouwen en natuur om je heen, maar je mist iets. Je zet je eerste stap op je nieuwe planeet. EEN SCHOK GAAT DOOR JE HELE LICHAAM. Je weet het weer. Je zus. Jouw zus. ‘Blond middellang haar, blauwe ogen. Hoe kon ik niet zien dat zij het was!’")
+        print("Er is maar een ding dat je wilt doen, maar  je brein bedenkt toch 2 keuzes voor jezelf…")
+        
+        keuze = input(">>>")
+        if keuze.lower() == "a"or"b":
+            stukje20()
+            break
+        else:
+            required()
+def stukje20():
+    print("Het maakt niet uit wat voor keuzes je brein voor je bedenkt, je gaat terug dat schip in, en je gaat haar vinden. Zo makkelijk gaat het niet want je weet dat je alles vergeet als je het schip binnenstapt. Het maakt je niet uit. Je stapt het schip in en…")
+    input("Druk op enter om door te gaan")
+    stukje21()
+
+def stukje21():
+    print(".-. . ..-- -. .. . / -- . - / .--- . / --.. ..- ... --..-- / .... .- .--. .--. -.-- / . -. -..")
+    input("Druk op enter om door te gaan")
+    end()
+
+def stukje17():
+    while True:
+        print("Je blijft rennen en rennen maar er komt geen einde aan. De vrouw is vlak achter je en zwaait haar mes met wilde bewegingen. ‘Knul/Grietje!’ De lange brede man van eerder verschijnt vlak voor je neus. Je moet een niet zo lastige keuze maken.") 
+        print("Dus wat wordt ‘t?\n\nA.Stil staan en sterven\nB.Meegaan met de man")
+        
+        keuze = input(">>>")
+        if keuze.lower() == "a":
+            stukje18()
+            break
+        elif keuze.lower() == "b":
+            stukje16()
+            break
+        else:
+            required()
+
+def stukje18():
+    print("Je blijft stil staan… ‘Oke, dan doe we het zo!’ de man tilt je op gooit je over z’n schouder")
+    input("Druk op enter om door te gaan")
+    stukje16()
+
+def stukje19():
+    print("Ja, praten is een stuk vermoeiender dan je dacht. Je besluit lekker naar bed te gaan! Je komt je kamer in en duikt gelijk in bed. ‘Ah lekker’ denk je. Al dat gezeik met je zus zoeken ben je ook allang vergeten.  Het duurt nog geen 3 minuten of je gedachten gaan al richting dromenland.") 
+    print("Wacht, je zus? Had je een zus? Hoe zag ze eruit dan? ‘blond, middellang haar en blauwe ogen. ‘Ja Ik had een zus’")
+    print("Je schrikt wakker. Je had een droom maar je bent vergeten wat de inhoud was.")
+    print("‘Eindelijk we zijn er!’ je hoort een groep mensen juichen. ‘We kunnen weer over de toekomst denken!’ De mensen klinken een stuk gelukkiger met de situatie dan jij. ‘Toekomst? Wat wil ik eigenlijk gaan doen hier?’ Je voelt je leeg alsof je iets belangrijks heb achter gelaten maar je weet niet wat.")
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
